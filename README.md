@@ -1,2 +1,3 @@
 # puppet-modules
-generic puppet modules I've using with foreman.
+Some generic puppet modules, I'm using with foreman/katello.
+Mainly parameterised classes.
