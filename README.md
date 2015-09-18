@@ -1,4 +1,5 @@
 # puppet-modules
-Some generic puppet modules, I'm using with foreman/katello.
+Some generic puppet classes.
 Mainly parameterised classes.
+I'm using with foreman/katello.
 Use at your own risk.
