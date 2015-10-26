@@ -3,7 +3,6 @@
 #### Table of Contents
 
 1. [Overview](#overview)
-   classes here are parameterised classes, can you use to install packages. This is useful when using from Foreman, at least for me anyway.
 2. [Module Description - What the module does and why it is useful](#module-description)
 3. [Setup - The basics of getting started with sites](#setup)
     * [What sites affects](#what-sites-affects)
@@ -17,6 +16,7 @@
 ## Overview
 
 manage packages, install or remove. provided as hash.
+Classes here are parameterised classes, can you use to install packages. This is useful when using from Foreman, at least in my case anyway.
 
 ## Module Description
 
