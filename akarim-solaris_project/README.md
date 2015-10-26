@@ -49,7 +49,7 @@ This module works with foreman smart class paramters.
 	
 * In Foreman
 	set the type as yaml and provide details in parameters like so.
-	
+````	
 	  user.admin:
 	  	projid: 100
 	  	name: user.admin
@@ -57,6 +57,7 @@ This module works with foreman smart class paramters.
 	  	attribs:
 	  	  - project.max-sem-nsems=(priv,128,deny)
 	  	  - project.max-sem-ids=(priv,100,deny)
+````	
 		
 ## Reference
 
