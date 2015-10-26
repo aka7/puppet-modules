@@ -37,6 +37,8 @@ This module works with foreman smart class paramters.
 ## Usage
 
 * Install mutiple projects
+
+````	
  	$proj_list = {
  	  'user.admin' => { 
  			projid  => 100,
@@ -46,6 +48,7 @@ This module works with foreman smart class paramters.
 		},
 	 }
 	 class { solaris_project::create_project: project_list => $proj_list }
+````	
 	
 * In Foreman
 	set the type as yaml and provide details in parameters like so.
