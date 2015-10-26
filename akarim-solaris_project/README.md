@@ -37,27 +37,27 @@ This module works with foreman smart class paramters.
 ## Usage
 
 * Install mutiple projects
- $proj_list = {
-   'user.admin' => { 
- 		projid  => 100,
- 		name    => "user.admin",
-		comment => "admin project settings",
-		attribs => ["project.max-sem-nsems=(priv,128,deny)","project.max-sem-ids=(priv,100,deny)"]
-	},
- }
- class { solaris_project::create_project: project_list => $proj_list }
-
-* In Foreman
-set the type as yaml and provide details in parameters like so.
-
-  user.admin:
-  	projid: 100
-  	name: user.admin
-  	comment: 'Admin project settgins,
-  	attribs:
-  	  - project.max-sem-nsems=(priv,128,deny)
-  	  - project.max-sem-ids=(priv,100,deny)
+ 	$proj_list = {
+ 	  'user.admin' => { 
+ 			projid  => 100,
+ 			name    => "user.admin",
+			comment => "admin project settings",
+			attribs => ["project.max-sem-nsems=(priv,128,deny)","project.max-sem-ids=(priv,100,deny)"]
+		},
+	 }
+	 class { solaris_project::create_project: project_list => $proj_list }
 	
+* In Foreman
+	set the type as yaml and provide details in parameters like so.
+	
+	  user.admin:
+	  	projid: 100
+	  	name: user.admin
+	  	comment: 'Admin project settgins,
+	  	attribs:
+	  	  - project.max-sem-nsems=(priv,128,deny)
+	  	  - project.max-sem-ids=(priv,100,deny)
+		
 ## Reference
 
 ## Limitations
