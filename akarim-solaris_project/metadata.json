@@ -1,0 +1,13 @@
+{
+  "name": "akarim-solaris_project",
+  "version": "0.1.2",
+  "author": "akarim",
+  "summary": "Manage solaris project",
+  "license": "Apache 2.0",
+  "source": "null",
+  "project_page": null,
+  "issues_url": null,
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
