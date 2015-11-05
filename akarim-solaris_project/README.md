@@ -32,7 +32,7 @@ The manifests is for providing mutltiple projects.
 
 ### Beginning with solaris_project
 
-This module works with foreman smart class paramters.
+This module works with foreman smart class parameters.
 
 ## Usage
 
