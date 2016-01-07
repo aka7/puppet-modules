@@ -1,0 +1,14 @@
+{
+  "name": "akarim-users",
+  "version": "0.1.10",
+  "author": "sns",
+  "summary": "To create virtual users and groups so all users/groups can be defined in one place",
+  "license": "Apache 2.0",
+  "source": "",
+  "project_page": null,
+  "issues_url": null,
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+
