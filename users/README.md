@@ -97,13 +97,13 @@ class common::users {
   $users = {
     'admin'        => { uid => 666,
       gid          => 666,
-      comment      => 'admin Account - puppet managed'
+      comment      => 'admin Account - puppet managed',
       home_dir     => '/home/admin',
       create_group => true,
     },
     'foo'          => { uid => 667,
       gid          => 667,
-      comment      => 'foo Account - puppet managed'
+      comment      => 'foo Account - puppet managed',
       home_dir     => '/home/foo',
       create_group => true,
     },
