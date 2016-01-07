@@ -15,13 +15,21 @@
 
 ## Overview
 
-puppet module to add users, using virtual resource.
+puppet module to add users and groups, using virtual resource.
+Therefore all users can be defined in one place in foreman and is easier to manage.
+
 
 ## Module Description
+Module allows you to 
+- Define all users in one place, uses virtual resource. and realize the user on each node / hostgroup
+- add muttiple ssh keys for a user
+- also add individual groups.
+
+This module is mainly being used in katello/foreman setup. However should work in other setups.
 
 ## Setup
 
-configure all users as default list in foreman.  users::virtual::accounts: This will only define virtual users and won't acutally create the user in your node.
+Configure all users as default list in foreman.  users::virtual::accounts: This will only define virtual users and won't acutally create the user in your node.
 then use users class add all usernames you need creating in your node /hostgroup. This will realize the user listed in useranames. This is array of usernames. 
 
 This can also be defined using hiera but this is only tested using foreman smartclass param.
@@ -36,7 +44,7 @@ This can also be defined using hiera but this is only tested using foreman smart
 
 configure all virtual users in foreman / hiera or in a class
 
-i.e in foreman, the yaml output looks liek this
+i.e in foreman, the yaml output looks like this
 ````
 users::virtual::accounts:
   user_data:
@@ -78,6 +86,8 @@ users:
   usernames:
     - admin
 ````
+This will realize the user admin in your node in question. user foo won't be created.
+
 
 Example without foreman, defined in a class, (you can use hiera here instead )
 
@@ -114,12 +124,13 @@ will create user admin in mynode
 
 ## Reference
 
-This is a modication of torrancew-accounts module. which had lot of limitations, on what I wanted to achieve.  
+This is a modication of torrancew-accounts module. which great but had few limitations on what I wanted to achieve.  
 for exmaple,
-- I wanted to defined all users in one place, as virtual resource. so all users can be defined in one place in foreman.
+- I wanted to define all users in one place, as virtual resource. and realize the user on each node / hostgroup in foreman smart class param.
 - have a way to add muttiple ssh_keys
+- also add individual groups.
 
-because of the virtual resource approach I didn't feel pull request will be appropiate.
+because of the virtual resource approach,  I didn't feel pull request will be appropiate as it changes the module completely. This way I created my own.
 
 ## Limitations
 
