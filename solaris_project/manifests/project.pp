@@ -1,3 +1,5 @@
+
+# == Class: solaris_project::project
 # Manage solaris project
 # /etc/project
 # Features:
@@ -8,7 +10,7 @@
 #   Can be one of "present", absent.
 #   Defaults to present.
 #
-# [*name*]
+# [*project_name*]
 #   The name of the project
 #
 # [*projid*]
@@ -45,28 +47,27 @@
 
 
 define solaris_project::project(
-	$name    = $title,
-        $projid  = undef, 
-        $comment = "",
-        $users   = undef,
-        $groups  = undef,
-        $attribs = [],
-	$ensure  = 'present',
+  $project_name    = $title,
+  $projid          = undef,
+  $comment         = '',
+  $users           = undef,
+  $groups          = undef,
+  $attribs         = [],
+  $ensure          = 'present',
 
 ){
-	if $osfamily != 'Solaris' {
-		err ("solaris_project module is only support on solaris OS")
-	}else{
-	   sol_project { $title:
-		ensure  => $ensure,
-		name    => $name,
-		users   => $users,
-		groups  => $groups,
-		comment => $comment,
-		id      => $projid,
-  		attribs => $attribs,
-	   }
-	}
-
+  if $::osfamily != 'Solaris' {
+    err ('solaris_project module is only support on solaris OS')
+  }else{
+    sol_project { $title:
+      ensure  => $ensure,
+      name    => $project_name,
+      users   => $users,
+      groups  => $groups,
+      comment => $comment,
+      id      => $projid,
+      attribs => $attribs,
+    }
+  }
 }
 

@@ -51,7 +51,7 @@ This module works with foreman smart class parameters.
 ````	
 	
 * In Foreman
-	set the type as yaml and provide details in parameters like so.
+	set the project_list param type as yaml and provide details in parameters like so.
 ````	
 	  user.admin:
 	  	projid: 100
@@ -66,7 +66,7 @@ This module works with foreman smart class parameters.
 
 ## Limitations
 
-Testing on solaris 10 and 11 only
+Tested on solaris 10 and 11 only
 
 ## Development
 

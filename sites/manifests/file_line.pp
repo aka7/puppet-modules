@@ -25,13 +25,13 @@
 #
 #
 define sites::file_line(
-  $path    = $title,
-  $line    = undef,
-  $match   = undef,
+  $path  = $title,
+  $line  = undef,
+  $match = undef,
 ) {
-	file_line { $title:
-		path   => $path,  
-		line   => $line,
-		match  => $match,
-	}
+  file_line { $title:
+    path  => $path,
+    line  => $line,
+    match => $match,
+  }
 }
