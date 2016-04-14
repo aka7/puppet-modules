@@ -1,4 +1,4 @@
-# == Define: users::virtual::groups
+# == Class: users::virtual::groups
 #
 # A defined type for managing virtual groups
 # Features:

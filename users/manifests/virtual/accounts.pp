@@ -1,4 +1,4 @@
-# == Define: users::virtual::accounts
+# == Class: users::virtual::accounts
 #
 # A defined type for managing virtual user accounts
 # Features:

@@ -1,4 +1,4 @@
-# == Define: groups
+# == Class: users::groups
 #
 # [*username*]
 #   The hash of groups to be realized.

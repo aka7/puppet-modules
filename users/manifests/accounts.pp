@@ -1,4 +1,4 @@
-# == Define: users
+# == Define: users::accounts
 #
 # [*username*]
 #   The array of usernames to be realized.
