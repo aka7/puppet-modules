@@ -1,7 +1,7 @@
 # == Define: users
 #
 # [*username*]
-#   The hash of usernames to be realized.
+#   The array of usernames to be realized.
 #   Defaults to the title of the account resource.
 #
 # === Examples

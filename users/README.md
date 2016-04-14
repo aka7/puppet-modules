@@ -80,10 +80,9 @@ users::virtual::accounts:
 ````
 in your node / hostgroup, include which users you want created. using users class.
 
-Foreman yaml output below
+Foreman yaml output below for usernames parameter, add as array list
 ````
-users:
-  usernames:
+usernames:
     - admin
 ````
 This will realize the user admin in your node in question. user foo won't be created.
