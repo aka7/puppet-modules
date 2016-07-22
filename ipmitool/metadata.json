@@ -1,0 +1,11 @@
+{
+  "name": "sns-ipmitool",
+  "version": "0.1.1",
+  "author": "sns",
+  "summary": "install ipmitool packages",
+  "license": "Apache 2.0",
+  "source": "https://github.com/aka7/puppet-modules",
+  "project_page": null,
+  "issues_url": null,
+  "dependencies": [ ]
+}

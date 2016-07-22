@@ -1,0 +1,16 @@
+ipmitool
+
+module to install ipmitooli tool on redhat physcial hosts.
+
+License
+-------
+Apache-2.0
+
+Contact
+-------
+
+
+Support
+-------
+
+Please log tickets and issues at our [Projects site](http://projects.example.com)
