@@ -123,7 +123,7 @@ will create user admin in mynode
 
 ## Reference
 
-This is a modication of torrancew-accounts module. which I found useful but had few limitations on what I wanted to achieve.  
+This is a modification of torrancew-accounts module. which I found useful but had few limitations on what I wanted to achieve.  
 for example,
 - I wanted to define all users in one place, as virtual resource. and realize the user on each node / hostgroup in foreman smart class param.
 - have a way to add muttiple ssh_keys
