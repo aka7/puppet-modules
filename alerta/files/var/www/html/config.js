@@ -3,7 +3,7 @@
 angular.module('config', [])
   .constant('config', {
     'endpoint'    : "/api",
-    'provider'    : "",
+    'provider'    : "basic",
     'colors'      : {
       'severity': {
         'fatal'        : '#000000',  // black

@@ -1,6 +1,6 @@
 # == Class: alerta
 #
-# Full description of class alerta here.
+# basic module to setup alerta
 #
 # === Parameters
 #
@@ -24,12 +24,11 @@
 # === Examples
 #
 #  class { 'alerta':
-#    servers => [ 'pool.ntp.org', 'ntp.local.company.com' ],
 #  }
 #
 # === Authors
 #
-# Author Name <author@domain.com>
+# Author Name <Abdul Karim>
 #
 # === Copyright
 #
