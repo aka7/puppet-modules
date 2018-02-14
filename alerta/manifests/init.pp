@@ -35,6 +35,10 @@
 # Copyright 2018 Your name here, unless otherwise noted.
 #
 class alerta {
+  # only tested on debian ec2 build to configure basic alerta
+  if $::osfamily != 'debian' {
+    fail ("${::hostname} : This module does not support ${::osfamily}")
+  }
   include pip
   package {'mongodb-org':
       ensure => installed
